@@ -68,7 +68,7 @@ public class Main {
         if (ordinato(v))
             System.out.println(" Il vettore è ordinato!");
         if (!ordinato(v))
-            System.out.println(" Il vettore non è non odinato T_T");
+            System.out.println(" Il vettore non è non ordinato T_T");
         long fine = System.currentTimeMillis();
         System.out.println();
         System.out.println(" Con " + DIM + " elementi, il programma ha impiegato "
