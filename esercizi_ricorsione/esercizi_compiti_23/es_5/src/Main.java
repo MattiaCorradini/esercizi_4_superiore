@@ -6,7 +6,6 @@ public class Main {
             return true;
         return ricerca(v, t, i+1, f);
     }
-
     public static void main(String[] args) {
         final int DIM=20;
         int t=4, j=0;
