@@ -1,5 +1,5 @@
 public class Main {
-    private static final int DIM = 100000;
+    private static final int DIM = 10000000;
     /**
      * riordina il vettore facendo scorrere il vettore e scambiando ogni volta due numeri adiacenti
      * che non sono in ordine crescente
@@ -38,7 +38,7 @@ public class Main {
     public static void main(String[] args) {
         int []v= new int[DIM];
         for (int i = 0; i < v.length; i++) {
-            v[i] = (int)(Math.random() * 1000000);
+            v[i] = (int)(Math.random() * 100000000);
         }
         long inizio = System.currentTimeMillis();
         bubbleSort(v);
