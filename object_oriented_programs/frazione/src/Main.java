@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Frazione f, g, h;
-        f = new Frazione(1, 2);
-        g = new Frazione(3, 0);
-        h = new Frazione("1/2");
-        System.out.println("Hello world");
+        Frazione g= new Frazione(1,2);
+        Frazione f= new Frazione(3,2);
+        System.out.println(g.somma(f));
+        System.out.println(g.sottrazione(f));
+        System.out.println(g.moltiplicazione(f));
+        System.out.println(g.divisione(f));
     }
 }
