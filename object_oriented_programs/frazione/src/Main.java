@@ -1,7 +1,9 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Frazione g= new Frazione(1,2);
-        Frazione f= new Frazione(3,2);
+        Scanner in = new Scanner(System.in);
+        Frazione g= new Frazione(in.nextInt(), in.nextInt());
+        Frazione f= new Frazione(in.nextInt(), in.nextInt());
         System.out.println(g.somma(f));
         System.out.println(g.sottrazione(f));
         System.out.println(g.moltiplicazione(f));
