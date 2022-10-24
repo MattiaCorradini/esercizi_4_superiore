@@ -2,7 +2,7 @@ public class Main {
     private static final int DIM = 10000000;
     /**
      * riordina il vettore facendo scorrere il vettore e scambiando ogni volta due numeri adiacenti
-     * che non sono in ordine crescente
+     * tra loro che non sono in ordine crescente
      * @param v il vettore da riordinare
      */
     public static void bubbleSort(int[] v) {
