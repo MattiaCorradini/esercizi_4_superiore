@@ -35,4 +35,23 @@
 *.app
 /**/nbproject/private/
 /**/build/
-/**/dist
+/**/dist/
+
+# Configurazione presa da https://github.com/kelemen/netbeans-gradle-project/blob/master/.gitignore
+
+/*/nb-configuration.xml
+/nbproject/
+/*/nbproject/
+/*/target/
+/*/build/
+/netbeans-gradle-default-models/gradle-api/
+.gradle/
+/.nb-gradle-properties
+.nb-gradle/
+
+# Directories left from old Ant project
+/build/
+/nbproject/private/
+ 
+# Documentation
+doc/
