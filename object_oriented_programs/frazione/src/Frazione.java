@@ -6,7 +6,7 @@ public class Frazione {
         this.setDen(den);
     }
     public Frazione() {
-
+        this.num=this.den=1;
     }
     public int getNum() {
         return num;
