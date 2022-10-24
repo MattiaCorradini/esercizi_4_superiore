@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df728821-15a3-497b-b95e-8908b284b7f7" name="Changes" comment="Aggiunge il merge sort" />
+    <list default="true" id="df728821-15a3-497b-b95e-8908b284b7f7" name="Changes" comment="Aggiunge il merge sort">
+      <change beforePath="$PROJECT_DIR$/../../object_oriented_programs/frazione/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../object_oriented_programs/frazione/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +44,7 @@
       <workItem from="1666283691273" duration="224000" />
       <workItem from="1666293467460" duration="24000" />
       <workItem from="1666599510527" duration="62000" />
+      <workItem from="1666599797312" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunge il merge sort">
       <created>1664982637056</created>
@@ -64,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666599564633</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Aggiunge il merge sort">
+      <created>1666599812908</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666599812908</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
