@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5529e3e7-00ab-4ddf-af3d-76bf2683d46f" name="Changes" comment="Aggiunge gli input delle frazioni">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5529e3e7-00ab-4ddf-af3d-76bf2683d46f" name="Changes" comment="Aggiunge gli input delle frazioni" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +49,7 @@
       <workItem from="1666598792947" duration="890000" />
       <workItem from="1666599721160" duration="73000" />
       <workItem from="1666599832979" duration="36000" />
+      <workItem from="1666599900990" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunge le operazioni">
       <created>1666450075982</created>
@@ -87,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666599845125</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Aggiunge gli input delle frazioni">
+      <created>1666599914824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666599914824</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
