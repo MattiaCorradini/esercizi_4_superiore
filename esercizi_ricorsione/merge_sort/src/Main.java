@@ -1,5 +1,5 @@
 public class Main {
-    public static final int DIM = 100000;
+    public static final int DIM = 10000;
     /**
      * funzione che fonde tra loro due vettori ordinati
      * @param v vettore in cui fondere i due vettori
@@ -67,7 +67,7 @@ public class Main {
         int[] v = new int[DIM];
         long inizio = System.currentTimeMillis();
         for (int i = 0; i < DIM; i++) {
-            v[i] = (int)(Math.random()*1000000);
+            v[i] = (int)(Math.random()*100000);
         }
         mergeSort(v, 0, DIM-1);
         for (int i = 0; i < DIM; i++) {
