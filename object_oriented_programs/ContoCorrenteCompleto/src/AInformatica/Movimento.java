@@ -1,16 +1,14 @@
 package AInformatica;
-
 import java.time.LocalDateTime;
-public class Movimento {
-    private final String descrizione;
-    private final float importo;
-    private final LocalDateTime data;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
-    public Movimento(String descrizione, float importo, LocalDateTime data) {
-        this.descrizione = descrizione;
-        this.importo = importo;
-        this.data = data;
-    }
+public class Movimento {
+
+    private String descrizione;
+    private float importo;
+    private LocalDateTime data;
 
     public Movimento(String descrizione, float importo){
         this.descrizione = descrizione;
@@ -18,8 +16,15 @@ public class Movimento {
         this.data = LocalDateTime.now();
     }
 
+    private String FormattaData(){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy.MM.dd - HH:mm:ss", Locale.ITALY)
+                .withZone(ZoneId.of("Europe/Rome"));
+        String text = data.format(formatter);
+        return text;
+    }
+
     @Override
     public String toString() {
-        return "descrizione= " + descrizione + " importo= " + importo + " data= " + data;
+        return "-descrizione: " + descrizione + ", importo: " + importo + "€" + ", data= " + FormattaData();
     }
 }

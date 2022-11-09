@@ -1,13 +1,14 @@
 package AInformatica;
 
 public class ContoCorrente {
-    private final int numeroConto;
-    private final String nome;
-    private final String cognome;
+
+    private int numeroConto;
+    private String nome;
+    private String cognome;
     private float saldo;
-    private final Movimento[] movimenti;
+    private Movimento[] movimenti;
     private int n_movimenti;
-    private static final int MAX_MOVIMENTI = 100;
+    private static int MAX_MOVIMENTI = 100;
 
     public ContoCorrente(int numeroConto, String nome, String cognome) {
         this.numeroConto = numeroConto;
@@ -48,6 +49,6 @@ public class ContoCorrente {
 
     @Override
     public String toString() {
-        return "nome: " + nome + ", cognome: " + cognome + ", saldo: " + saldo + "€" + ", numero conto: " + numeroConto;
+        return "-nome: " + nome + ", cognome: " + cognome + ", saldo: " + saldo + "€" + ", numero conto: " + numeroConto;
     }
 }

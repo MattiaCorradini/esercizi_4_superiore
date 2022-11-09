@@ -1,8 +1,9 @@
 package AInformatica;
 
 public class Banca {
-    private final static int MAX_CONTI = 100;
-    private final ContoCorrente[] conti;
+
+    private static int MAX_CONTI = 100;
+    private ContoCorrente[] conti;
     private int n_conti;
 
     public Banca(){
