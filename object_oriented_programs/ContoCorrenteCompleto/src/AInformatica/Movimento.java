@@ -17,7 +17,7 @@ public class Movimento {
     }
 
     private String FormattaData(){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy.MM.dd - HH:mm:ss", Locale.ITALY)
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm:ss", Locale.ITALY)
                 .withZone(ZoneId.of("Europe/Rome"));
         String text = data.format(formatter);
         return text;
@@ -25,6 +25,9 @@ public class Movimento {
 
     @Override
     public String toString() {
-        return "-descrizione: " + descrizione + ", importo: " + importo + "€" + ", data= " + FormattaData();
+        if (importo>0)
+            return "-Il giorno: " + FormattaData() + "               ha mosso: " + "+" + importo + "€"
+                    + "               per: " + descrizione;
+        return "-Il giorno: " + FormattaData() + "               ha mosso: " + importo + "€" + "               per: " + descrizione;
     }
 }

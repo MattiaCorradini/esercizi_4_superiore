@@ -104,7 +104,6 @@ public class Main {
                         float s = in0.nextFloat();
                         if (s > contoAttuale.getSaldo()) {
                             System.out.println("Non hai abbastanza denaro nel tuo conto.");
-                            break;
                         }
                         else {
                             System.out.print("Motivo del prelievo: ");
@@ -148,8 +147,8 @@ public class Main {
                 ContoCorrente contoAttuale;
                 for (ContoCorrente contoCorrente : t) {
                     System.out.println(contoCorrente);
-                    System.out.println();
                 }
+                System.out.println();
                 if (b.ricercaPerCognome(c).length>1){
                     Scanner id = new Scanner(System.in);
                     System.out.print("Inserisci il numero di conto associato al cognome: ");
@@ -160,7 +159,7 @@ public class Main {
                 }
                 else
                     contoAttuale = t[0];
-                if (contoAttuale.numeroMovimenti().length>0)
+                if (contoAttuale.numeroMovimenti()[0]!=null)
                     mostraMovimenti(contoAttuale);
                 else
                     System.out.println("Non sono ancora stati effettuati movimenti su questo conto.");
