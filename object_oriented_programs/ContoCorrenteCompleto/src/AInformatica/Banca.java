@@ -25,8 +25,9 @@ public class Banca {
                 contatore++;
             }
         }
-        if (contatore == 0)
-            return null;
+        if (contatore == 0) {
+            throw new RuntimeException("Il conto non esiste.");
+        }
         ContoCorrente[] contiCognome = new ContoCorrente[contatore];
         int j = 0;
         for (int i = 0; i < n_conti; i++) {

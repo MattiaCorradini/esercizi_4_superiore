@@ -5,6 +5,10 @@ import AInformatica.Movimento;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * Metodo crea dei conti correnti "di prova".
+     * @param b l'oggetto banca che contiene i conti corrente.
+     */
     public static void AssegnaConti(Banca b){
         b.creaConto("Sandro", "Tonali");
         b.creaConto("Marco", "Del Lungo");
@@ -24,6 +28,10 @@ public class Main {
         b.creaConto("Giovanni", "Chiellini");
     }
 
+    /**
+     * Metodo che stampa tutti i conti corrente contenuti nell'oggetto banca.
+     * @param b l'oggetto banca che contiene i conti corrente.
+     */
     static void mostraConti (Banca b){
         ContoCorrente[] a;
         a = b.getConti();
@@ -34,6 +42,10 @@ public class Main {
         }
     }
 
+    /**
+     * Metodo che stampa tutti i movimenti associati a un determinato conto corrente.
+     * @param b l'oggetto conto corrente di cui si vogliono sapere i movimenti.
+     */
     static void mostraMovimenti(ContoCorrente b){
         Movimento[] a;
         a = b.numeroMovimenti();
@@ -44,6 +56,9 @@ public class Main {
         }
     }
 
+    /**
+     * Menù che permette di scegliere quale azione effettuare su di un conto.
+     */
     public static void Menu(){
         System.out.println("0) torna al menù principale;");
         System.out.println("1) visualizza il conto;");
@@ -51,6 +66,9 @@ public class Main {
         System.out.println("3) deposita;");
     }
 
+    /**
+     * Menù che mostra le varie opzioni in base a ciò che si vuole fare in banca.
+     */
     public static void Menu2(){
         System.out.println("0) esci;");
         System.out.println("1) seleziona un conto;");
