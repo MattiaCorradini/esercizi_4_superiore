@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_compiti_vacanze.LogIn">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="302.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\Studente\Desktop\informatica\esercizi_4_superiore\javafx\progetto_compiti_vacanze\src\img\logonero.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="323.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="91.0" layoutX="109.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\Studente\Desktop\informatica\esercizi_4_superiore\javafx\progetto_compiti_vacanze\src\img\lock.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="34.0" layoutY="157.0" text="Username" textFill="#ead53a">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="240.0" text="Password" textFill="#ead53a">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="34.0" layoutY="185.0" prefHeight="40.0" prefWidth="230.0" promptText="Username">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+            <PasswordField fx:id="password" layoutX="35.0" layoutY="268.0" prefHeight="40.0" prefWidth="230.0" promptText="Password">
+               <font>
+                  <Font size="16.0" />
+               </font></PasswordField>
+            <Button fx:id="loginButton" layoutX="118.0" layoutY="335.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: #ead53a;" text="Login">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="errate_fields" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="139.0" prefHeight="18.0" prefWidth="301.0" textFill="RED">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
