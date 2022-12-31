@@ -12,7 +12,7 @@ import java.util.Objects;
 public class Main extends Application {
 
     private void credenziali(){
-        System.out.println("\nLogin credentials\n:\n" +
+        System.out.println("\nLogin credentials:\n" +
                            "Nome utente: PrimoAccount - Password: CSapplication2021\n" +
                            "Nome utente: SecondoAccount - Password: CSapplication2022\n" +
                            "Nome utente: TerzoAccount - Password: CSapplication2023\n");
@@ -25,7 +25,7 @@ public class Main extends Application {
         stg = primaryStage;
         primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("logInPage.fxml")));
-        primaryStage.setTitle("Applications");
+        primaryStage.setTitle("Corradini applications");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
         Image image = new Image("C:\\Users\\Studente\\Desktop\\informatica\\esercizi_4_superiore\\javafx\\progetto_compiti_vacanze\\src\\img\\mc.png");

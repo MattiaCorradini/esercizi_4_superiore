@@ -20,6 +20,7 @@ public class LogIn {
     }
 
     private void checkLogin() throws IOException {
+
         Main m = new Main();
 
         if(username.getText().equals("PrimoAccount") && password.getText().equals("CSapplication2021")) {
@@ -32,12 +33,6 @@ public class LogIn {
         } if(username.getText().equals("PrimoAccount") && password.getText().equals("CSapplication2023")) {
             errate_fields.setText("Unclear credentials, try again.");
             username.setText("");
-            password.setText("");
-        } else if (username.getText().equals("PrimoAccount") && !password.getText().equals("CSapplication2021")){
-            errate_fields.setText("Wrong password!");
-            username.setText("");
-        } else if (!username.getText().equals("PrimoAccount") && password.getText().equals("CSapplication2021")){
-            errate_fields.setText("Wrong username!");
             password.setText("");
         }
 
@@ -52,12 +47,6 @@ public class LogIn {
             errate_fields.setText("Unclear credentials, try again.");
             username.setText("");
             password.setText("");
-        } else if (username.getText().equals("SecondoAccount") && !password.getText().equals("CSapplication2022")){
-            errate_fields.setText("Wrong password!");
-            username.setText("");
-        } else if (!username.getText().equals("SecondoAccount") && password.getText().equals("CSapplication2022")){
-            errate_fields.setText("Wrong username!");
-            password.setText("");
         }
 
         if(username.getText().equals("TerzoAccount") && password.getText().equals("CSapplication2023")) {
@@ -70,12 +59,6 @@ public class LogIn {
         } if(username.getText().equals("TerzoAccount") && password.getText().equals("CSapplication2021")) {
             errate_fields.setText("Unclear credentials, try again.");
             username.setText("");
-            password.setText("");
-        } else if (username.getText().equals("TerzoAccount") && !password.getText().equals("CSapplication2023")){
-            errate_fields.setText("Wrong password!");
-            username.setText("");
-        } else if (!username.getText().equals("TerzoAccount") && password.getText().equals("CSapplication2023")){
-            errate_fields.setText("Wrong username!");
             password.setText("");
         }
 
