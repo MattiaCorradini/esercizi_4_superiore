@@ -22,20 +22,18 @@ public class DiceRoll {
 
         rollButton.setDisable(true);
 
-        Thread thread = new Thread(){
-            public void run(){
-                try {
-                    for (int i = 0; i < 15; i++) {
-                        File file = new File("C:\\Users\\Studente\\Desktop\\informatica\\esercizi_4_superiore\\javafx\\progetto_compiti_vacanze\\src\\main\\java\\com\\dice\\dice" + (random.nextInt(6)+1)+".png");
-                        diceImage.setImage(new Image(file.toURI().toString()));
-                        Thread.sleep(100);
-                    }
-                    rollButton.setDisable(false);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+        Thread thread = new Thread(() -> {
+            try {
+                for (int i = 0; i < 15; i++) {
+                    File file = new File("C:\\Users\\Studente\\Desktop\\informatica\\esercizi_4_superiore\\javafx\\progetto_compiti_vacanze\\src\\main\\java\\com\\dice\\dice" + (random.nextInt(6)+1)+".png");
+                    diceImage.setImage(new Image(file.toURI().toString()));
+                    Thread.sleep(100);
                 }
+                rollButton.setDisable(false);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-        };
+        });
         thread.start();
     }
 
