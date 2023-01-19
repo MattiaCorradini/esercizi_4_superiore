@@ -28,7 +28,7 @@ public class Main extends Application {
         primaryStage.setTitle("Corradini applications");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
-        Image image = new Image("C:\\Users\\Studente\\Desktop\\informatica\\esercizi_4_superiore\\javafx\\progetto_compiti_vacanze\\src\\img\\mc.png");
+        Image image = new Image("mc.png");
         primaryStage.getIcons().add(image);
         credenziali();
     }

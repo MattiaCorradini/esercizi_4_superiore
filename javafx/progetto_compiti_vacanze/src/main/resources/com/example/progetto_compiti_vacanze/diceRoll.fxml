@@ -10,7 +10,7 @@
     <children>
         <ImageView fx:id="diceImage" fitHeight="200.0" fitWidth="200.0" layoutX="92.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="C:\Users\Studente\Desktop\informatica\esercizi_4_superiore\javafx\progetto_compiti_vacanze\src\img\dice1.png" />
+                <Image url="dice1.png" />
             </image></ImageView>
         <Button fx:id="rollButton" layoutX="395.0" layoutY="174.0" mnemonicParsing="false" onAction="#roll" prefHeight="30.0" prefWidth="100.0" text="Roll">
             <font>

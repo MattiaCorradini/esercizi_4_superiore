@@ -16,7 +16,7 @@
          <children>
             <ImageView fitHeight="400.0" fitWidth="302.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="C:\Users\Studente\Desktop\informatica\esercizi_4_superiore\javafx\progetto_compiti_vacanze\src\img\logonero.PNG" />
+                  <Image url="logonero.PNG" />
                </image>
             </ImageView>
          </children>
@@ -27,7 +27,7 @@
          <children>
             <ImageView fitHeight="86.0" fitWidth="91.0" layoutX="109.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="C:\Users\Studente\Desktop\informatica\esercizi_4_superiore\javafx\progetto_compiti_vacanze\src\img\lock.png" />
+                  <Image url="lock.png" />
                </image>
             </ImageView>
             <Label layoutX="34.0" layoutY="157.0" text="Username" textFill="#ead53a">

@@ -33,17 +33,17 @@
         </Text>
         <ImageView fx:id="correct" fitHeight="225.0" fitWidth="254.0" layoutX="188.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="C:\Users\Studente\Desktop\informatica\esercizi_4_superiore\javafx\progetto_compiti_vacanze\src\img\correct.jpg" />
+                <Image url="correct.jpg" />
             </image>
         </ImageView>
         <ImageView fx:id="down" fitHeight="225.0" fitWidth="254.0" layoutX="179.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="C:\Users\Studente\Desktop\informatica\esercizi_4_superiore\javafx\progetto_compiti_vacanze\src\img\down.png" />
+                <Image url="down.png" />
             </image>
         </ImageView>
         <ImageView fx:id="up" fitHeight="225.0" fitWidth="254.0" layoutX="185.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="C:\Users\Studente\Desktop\informatica\esercizi_4_superiore\javafx\progetto_compiti_vacanze\src\img\up.jpg" />
+                <Image url="up.jpg" />
             </image>
         </ImageView>
         <Button layoutX="540.0" layoutY="368.0" maxHeight="30.0" maxWidth="60.0" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" onAction="#onLogOut" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: gold;" text="EXIT" AnchorPane.bottomAnchor="-0.8000000000000114" AnchorPane.topAnchor="364.0">

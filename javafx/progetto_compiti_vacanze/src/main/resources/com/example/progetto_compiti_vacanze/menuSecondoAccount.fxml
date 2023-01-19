@@ -10,7 +10,7 @@
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="C:\Users\Studente\Desktop\informatica\esercizi_4_superiore\javafx\progetto_compiti_vacanze\src\img\background.png" />
+            <Image url="background.png" />
          </image>
       </ImageView>
       <Button layoutX="506.0" layoutY="355.0" minHeight="30.0" mnemonicParsing="false" onAction="#logOut" prefWidth="80.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black; -fx-background-color: gold;" text="LogOut">

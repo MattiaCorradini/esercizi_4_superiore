@@ -10,7 +10,7 @@
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="C:\Users\Studente\Desktop\informatica\esercizi_4_superiore\javafx\progetto_compiti_vacanze\src\img\background.png" />
+            <Image url="background.png" />
          </image>
       </ImageView>
       <Button layoutX="123.0" layoutY="88.0" minHeight="40.0" mnemonicParsing="false" onAction="#goToCounter" prefWidth="100.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black; -fx-background-color: #356fcc;" text="Counter" AnchorPane.leftAnchor="110.0">
