@@ -20,7 +20,7 @@ public class Main {
                 parole.add(letturaFile.next());
             }
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("File non trovato.");
             System.exit(53550);
         }
         return parole;
