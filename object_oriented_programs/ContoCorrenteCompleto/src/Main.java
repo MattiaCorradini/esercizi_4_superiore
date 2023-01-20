@@ -2,31 +2,10 @@ import AInformatica.Banca;
 import AInformatica.ContoCorrente;
 import AInformatica.Movimento;
 
+import java.io.*;
 import java.util.Scanner;
 
 public class Main {
-    /**
-     * Metodo crea dei conti correnti "di prova".
-     * @param b l'oggetto banca che contiene i conti corrente.
-     */
-    public static void AssegnaConti(Banca b){
-        b.creaConto("Sandro", "Tonali");
-        b.creaConto("Marco", "Del Lungo");
-        b.creaConto("Andrea", "Bonometti");
-        b.creaConto("Luca", "Stornati");
-        b.creaConto("Luisa", "Vacca");
-        b.creaConto("Alessandro", "Scarsato");
-        b.creaConto("Francesco", "Rossi");
-        b.creaConto("Daniele", "Gollini");
-        b.creaConto("Gianluca", "Corradini");
-        b.creaConto("Riccardo", "Vacca");
-        b.creaConto("Gabriele", "Pea");
-        b.creaConto("Mattia", "Zicari");
-        b.creaConto("Samuele", "Bugatti");
-        b.creaConto("Federico", "Ippolito");
-        b.creaConto("Ercole", "Bonometti");
-        b.creaConto("Giovanni", "Chiellini");
-    }
 
     /**
      * Metodo che stampa tutti i conti corrente contenuti nell'oggetto banca.
@@ -78,8 +57,18 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Banca b = new Banca();
-        AssegnaConti(b);
+        Banca b;
+        ObjectInputStream objIn = null;
+        try {
+            objIn = new ObjectInputStream(
+                    new FileInputStream("banca.bin"));
+            b = (Banca)objIn.readObject();
+            objIn.close();
+        } catch (IOException e) {
+            b = new Banca();
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
         Menu2();
         Scanner cognome = new Scanner(System.in);
         System.out.print("->Seleziona l'azione che vuoi compiere: ");
@@ -185,6 +174,16 @@ public class Main {
             System.out.println(); Menu2();
             System.out.print("->Continua o esci inserendo il numero: ");
             scelta2 = in2.nextInt();
+            ObjectOutputStream out = null;
+            try {
+                out = new ObjectOutputStream(
+                        new FileOutputStream("banca.bin")
+                );
+                out.writeObject(b);
+                out.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }

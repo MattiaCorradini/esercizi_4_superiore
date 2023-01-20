@@ -1,10 +1,11 @@
 package AInformatica;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-public class Movimento {
+public class Movimento implements Serializable {
 
     private String descrizione;
     private float importo;

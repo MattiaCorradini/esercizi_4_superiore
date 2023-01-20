@@ -1,6 +1,8 @@
 package AInformatica;
 
-public class Banca {
+import java.io.Serializable;
+
+public class Banca implements Serializable {
 
     private static int MAX_CONTI = 100;
     private ContoCorrente[] conti;

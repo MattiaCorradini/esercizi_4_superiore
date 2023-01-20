@@ -1,6 +1,8 @@
 package AInformatica;
 
-public class ContoCorrente {
+import java.io.Serializable;
+
+public class ContoCorrente implements Serializable {
 
     private int numeroConto;
     private String nome;
