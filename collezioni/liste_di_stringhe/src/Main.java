@@ -21,7 +21,7 @@ public class Main {
             }
         } catch (FileNotFoundException e) {
             System.out.println("File non trovato.");
-            System.exit(53550);
+            System.exit(50);
         }
         return parole;
     }
