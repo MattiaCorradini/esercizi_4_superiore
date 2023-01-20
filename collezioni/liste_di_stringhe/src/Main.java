@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> parole = readFile();
+        ArrayList<String> parole = ltturaFile();
         menu(parole);
     }
 
-    public static ArrayList<String> readFile() {
+    public static ArrayList<String> ltturaFile() {
         ArrayList<String> parole = new ArrayList<>();
         Scanner nome = new Scanner(System.in);
         System.out.print("Inserisci il nome del file da leggere: ");
