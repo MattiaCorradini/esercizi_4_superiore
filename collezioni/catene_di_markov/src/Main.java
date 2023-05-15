@@ -36,13 +36,24 @@ public class Main {
         ArrayList<String> testoGenerato = gt.genera(n);
         StringBuilder output = new StringBuilder();
         for (String word : testoGenerato) {
+            if (word == ".")
+                output.delete(output.length()-1, output.length());
             output.append(word).append(' ');
+            if (i == 0){
+                char c = output.charAt(0);
+                c -= 32;
+                output.deleteCharAt(0);
+                output.insert(0, c);
+            }
             i++;
             if (i==15){
                 output.append("\n");
-                i=0;
+                i=1;
             }
+
         }
+        output.delete(output.length()-1, output.length());
+        output.append(".");
         FileWriter out = new FileWriter("output.txt");
         out.write(output.toString());
         out.close();
