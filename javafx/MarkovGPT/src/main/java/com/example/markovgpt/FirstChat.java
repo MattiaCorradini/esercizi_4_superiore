@@ -1,6 +1,5 @@
 package com.example.markovgpt;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
@@ -84,13 +83,13 @@ public class FirstChat implements Initializable, Serializable {
         out.setText(String.valueOf(output));
     }
 
-    public void delete(ActionEvent actionEvent) {
+    public void delete() {
         txtfield.setText("");
         picker.setText("");
         out.setText("");
     }
 
-    public void secondChat(ActionEvent actionEvent) {
+    public void secondChat() {
         String filePath = "first.bin";
         serializeData(filePath);
         Main m = new Main();
@@ -101,7 +100,7 @@ public class FirstChat implements Initializable, Serializable {
         }
     }
 
-    public void thirdChat(ActionEvent actionEvent) {
+    public void thirdChat() {
         String filePath = "first.bin";
         serializeData(filePath);
         Main m = new Main();
@@ -112,7 +111,7 @@ public class FirstChat implements Initializable, Serializable {
         }
     }
 
-    public void fourthChat(ActionEvent actionEvent) {
+    public void fourthChat() {
         String filePath = "first.bin";
         serializeData(filePath);
         Main m = new Main();
@@ -123,7 +122,7 @@ public class FirstChat implements Initializable, Serializable {
         }
     }
 
-    public void fifthChat(ActionEvent actionEvent) {
+    public void fifthChat() {
         String filePath = "first.bin";
         serializeData(filePath);
         Main m = new Main();

@@ -12,7 +12,7 @@
     <children>
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#202123" height="551.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="251.0" />
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#353740" height="551.0" layoutX="250.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="701.0" />
-        <TextField fx:id="txtfield" layoutX="279.0" layoutY="446.0" prefHeight="38.0" prefWidth="642.0" promptText="Send a message" style="-fx-background-color: #6e6e80;">
+        <TextField fx:id="txtfield" layoutX="279.0" layoutY="446.0" prefHeight="38.0" prefWidth="602.0" promptText="Send a message" style="-fx-background-color: #6e6e80;">
             <font>
                 <Font name="System Bold" size="16.0" />
             </font>

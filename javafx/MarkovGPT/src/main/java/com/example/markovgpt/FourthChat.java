@@ -1,11 +1,9 @@
 package com.example.markovgpt;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
@@ -85,13 +83,13 @@ public class FourthChat implements Initializable {
         out.setText(String.valueOf(output));
     }
 
-    public void delete(ActionEvent actionEvent) {
+    public void delete() {
         txtfield.setText("");
         picker.setText("");
         out.setText("");
     }
 
-    public void secondChat(ActionEvent actionEvent) {
+    public void secondChat() {
         String filePath = "fourth.bin";
         serializeData(filePath);
         Main m = new Main();
@@ -102,7 +100,7 @@ public class FourthChat implements Initializable {
         }
     }
 
-    public void thirdChat(ActionEvent actionEvent) {
+    public void thirdChat() {
         String filePath = "fourth.bin";
         serializeData(filePath);
         Main m = new Main();
@@ -113,7 +111,7 @@ public class FourthChat implements Initializable {
         }
     }
 
-    public void firstChat(ActionEvent actionEvent) {
+    public void firstChat() {
         String filePath = "fourth.bin";
         serializeData(filePath);
         Main m = new Main();
@@ -124,7 +122,7 @@ public class FourthChat implements Initializable {
         }
     }
 
-    public void fifthChat(ActionEvent actionEvent) {
+    public void fifthChat() {
         String filePath = "fourth.bin";
         serializeData(filePath);
         Main m = new Main();

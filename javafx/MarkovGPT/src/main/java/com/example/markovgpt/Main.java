@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class Main extends Application {
-
     private static Stage stg;
 
     @Override
