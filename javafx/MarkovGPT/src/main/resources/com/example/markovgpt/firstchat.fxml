@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.markovgpt.FirstChat">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#202123" height="551.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="251.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#353740" height="551.0" layoutX="250.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="701.0" />
+      <TextField fx:id="txtfield" layoutX="279.0" layoutY="446.0" prefHeight="38.0" prefWidth="642.0" promptText="Send a message" style="-fx-background-color: #6e6e80;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="881.0" layoutY="446.0" mnemonicParsing="false" onAction="#send" prefHeight="32.0" prefWidth="40.0" style="-fx-background-color: #6e6e80;" text="➥" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="251.0" layoutY="51.0" prefHeight="46.0" prefWidth="700.0" text="MarkovGPT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="14.0" text="Designed by Corradini Mattia" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="picker" layoutX="279.0" layoutY="496.0" prefHeight="38.0" prefWidth="370.0" promptText="Choose the lenght of the text" style="-fx-background-color: #6e6e80;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="out" layoutX="279.0" layoutY="109.0" prefHeight="313.0" prefWidth="642.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextArea>
+      <Button layoutX="14.0" layoutY="109.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="175.0" style="-fx-border-color: #6e6e80; -fx-border-width: 3; -fx-background-radius: 5; -fx-border-radius: 5; -fx-background-color: #202123;" text="First chat" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="175.0" mnemonicParsing="false" onAction="#secondChat" prefHeight="46.0" prefWidth="175.0" style="-fx-border-color: #6e6e80; -fx-border-width: 3; -fx-background-radius: 5; -fx-border-radius: 5; -fx-background-color: #202123;" text="Second chat" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="242.0" mnemonicParsing="false" onAction="#thirdChat" prefHeight="46.0" prefWidth="175.0" style="-fx-border-color: #6e6e80; -fx-border-width: 3; -fx-background-radius: 5; -fx-border-radius: 5; -fx-background-color: #202123;" text="Third chat" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="376.0" mnemonicParsing="false" onAction="#fifthChat" prefHeight="46.0" prefWidth="175.0" style="-fx-border-color: #6e6e80; -fx-border-width: 3; -fx-background-radius: 5; -fx-border-radius: 5; -fx-background-color: #202123;" text="Fifth chat" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="306.0" mnemonicParsing="false" onAction="#fourthChat" prefHeight="46.0" prefWidth="175.0" style="-fx-border-color: #6e6e80; -fx-border-width: 3; -fx-background-radius: 5; -fx-border-radius: 5; -fx-background-color: #202123;" text="Fourth chat" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="196.0" layoutY="109.0" mnemonicParsing="false" onAction="#delete" prefHeight="46.0" prefWidth="46.0" style="-fx-border-color: #6e6e80; -fx-border-width: 3; -fx-border-radius: 5; -fx-background-radius: 5; -fx-background-color: #202123;" text="🗑" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
