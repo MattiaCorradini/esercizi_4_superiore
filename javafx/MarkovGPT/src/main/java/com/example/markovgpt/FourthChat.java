@@ -4,12 +4,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
 import java.io.*;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Objects;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class FourthChat implements Initializable {
     @FXML
@@ -20,6 +18,7 @@ public class FourthChat implements Initializable {
     public TextField picker;
     private final ArrayList<String> catena;
     private final GenerazioneTesto gt;
+    private File selectedFile;
 
     public void serializeData(String filePath) {
         try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(filePath))) {
@@ -51,6 +50,22 @@ public class FourthChat implements Initializable {
     public FourthChat() {
         this.catena = new ArrayList<>();
         this.gt = new GenerazioneTesto();
+    }
+
+    public void filechooser() throws FileNotFoundException {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File("testi"));
+        selectedFile = fileChooser.showOpenDialog(Main.getStg());
+        if (selectedFile != null) {
+            Scanner in = new Scanner(selectedFile);
+            StringBuilder inputText = new StringBuilder();
+            while (in.hasNext()) {
+                String temp = in.next();
+                catena.add(temp);
+                inputText.append(temp).append(" ");
+            }
+            txtfield.setText(inputText.toString());
+        }
     }
 
     public void send() {

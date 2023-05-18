@@ -9,8 +9,16 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
+/**
+ * @Author Mattia Corradini
+ */
+
 public class Main extends Application {
     private static Stage stg;
+
+    public static Stage getStg() {
+        return stg;
+    }
 
     @Override
     public void start(Stage primaryStage) throws IOException {

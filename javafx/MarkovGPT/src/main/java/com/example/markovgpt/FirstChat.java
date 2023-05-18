@@ -4,12 +4,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
 import java.io.*;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Objects;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class FirstChat implements Initializable, Serializable {
     @FXML
@@ -20,6 +18,7 @@ public class FirstChat implements Initializable, Serializable {
     public TextField picker;
     private final ArrayList<String> catena;
     private final GenerazioneTesto gt;
+    private File selectedFile;
 
     public void serializeData(String filePath) {
         try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(filePath))) {
@@ -53,6 +52,22 @@ public class FirstChat implements Initializable, Serializable {
         this.gt = new GenerazioneTesto();
     }
 
+    public void filechooser() throws FileNotFoundException {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File("testi"));
+        selectedFile = fileChooser.showOpenDialog(Main.getStg());
+        if (selectedFile != null) {
+            Scanner in = new Scanner(selectedFile);
+            StringBuilder inputText = new StringBuilder();
+            while (in.hasNext()) {
+                String temp = in.next();
+                catena.add(temp);
+                inputText.append(temp).append(" ");
+            }
+            txtfield.setText(inputText.toString());
+        }
+    }
+
     public void send() {
         String testo = txtfield.getText();
         String [] paroleArray = testo.split(" ");
@@ -72,7 +87,7 @@ public class FirstChat implements Initializable, Serializable {
                 output.insert(0, c);
             }
             i++;
-            if (i==10){
+            if (i==12){
                 output.append("\n");
                 i=1;
             }
