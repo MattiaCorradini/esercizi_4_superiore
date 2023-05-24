@@ -80,4 +80,35 @@ public class AlberoBinario {
         return ricercaR(root, n);
     }
 
+    private int quantiMinoriR(int n, Nodo nodo){
+        if (nodo == null)
+            return 0;
+        if (nodo.info < n){
+            return 1 + quantiMinoriR(n, nodo.sx) + quantiMinoriR(n, nodo.dx);
+        }
+        else
+            return quantiMinoriR(n, nodo.sx);
+    }
+
+    public int quantiMinori(int n){
+        return quantiMinoriR(n, root);
+    }
+
+    private int sommaMinoreR(Nodo nodo){
+        if (nodo.dx == null && nodo.sx == null)
+            return nodo.info;
+        int d = Integer.MAX_VALUE, s = Integer.MAX_VALUE;
+        if (nodo.dx != null)
+            d = sommaMinoreR(nodo.dx);
+        if (nodo.sx != null)
+            s = sommaMinoreR(nodo.sx);
+        if (s < d)
+            return s + nodo.info;
+        else
+            return d + nodo.info;
+    }
+
+    public int sommaMinore(){
+        return sommaMinoreR(root);
+    }
 }
